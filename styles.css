@@ -25,6 +25,7 @@ body{
 #main {
 	width: 1000px;
 	margin: 0px auto;
+	background-color: red;
 }
 
 #header {
@@ -114,23 +115,23 @@ body{
 /*menu*/
 #buttons{
 	text-align:center;
-	width: 980px;
+	width: 960px;
 	height: 78px;
-	margin-left: 0px;
-	padding: 20px 0px 0px 20px;
-	background: url(images/buttons.gif) left top no-repeat;
+	padding: 5px 20px 5px 20px;
+	/* background: url(images/buttons.gif) left top no-repeat; */
+	background-color: rgb(102, 102, 102);
 }
 
 #buttons a {
 	font-family: Book Antiqua, Arial, Helvetica, sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	display: block;
 	float: left;
 	text-decoration: none;
 	text-align: center;
 	color: #FFFFFF;
-	width: 188px;
-	height: 33px;
+	width: 14%;
+	height: 30px;
 	font-weight: normal;
 }
 
@@ -140,6 +141,29 @@ body{
 	text-decoration: underline;
 	color: #FFFFFF;
 	font-weight: normal;
+}
+
+td {
+	font-family: Book Antiqua, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	color: #FFFFFF;
+	width: auto;
+	height: 28px;
+	font-weight: normal;
+	border: 3px solid red;
+	border-radius: 15px;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+	padding: 5px 1.6% 5px 1.6%;
+	margin-top: 12px;
+}
+
+tr, table {
+	width: 100%;
 }
 
 /*content*/
