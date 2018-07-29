@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>MyFreeCssTemplates.com free CSS template</title>
+<title>La Seg TT</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="styles.css" rel="stylesheet" type="text/css" />
@@ -29,46 +29,82 @@
     <!-- </div> -->
     <!-- top -->
     <div class="top">
+        <div class="logo"></div>
         <div class="top_img">
             <div id="wrapper">
                 <div id="slider-wrapper">        
                     <div id="slider" class="nivoSlider">
                         <!-- inclure logo sur les images -->
-                        <img src="images/top_img.jpg" alt="" />
-                        <img src="images/top_img2.jpg" alt=""/>
-                        <img src="images/top_img3.jpg" alt="" />
-                        <img src="images/top_img4.jpg" alt="" />
-                        <img src="images/top_img5.jpg" alt="" />
+                        <img src="images/loto.jpg" alt="#" />
+                        <img src="images/jeunes.jpg" alt="#"/>
+                        <img src="images/jeunes1.jpg" alt="#" />
+                        <img src="images/titres.jpg" alt="#" />
+                        <img src="images/tournoi_secteur.jpg" alt="#" />
                     </div>        
                 </div>
             </div>
-    <script type="text/javascript" src="lib/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="lib/jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-    </script>
-		
+            <script type="text/javascript" src="lib/jquery-1.4.3.min.js"></script>
+            <script type="text/javascript" src="lib/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+            </script>
         </div>
         <div style="clear: both; padding-top: 40px;"></div>
     </div>
-    
-    <!-- buttons -->
-    <div id="buttons">
-        <table>
-            <tr>
-                <td><a href="index.html" class="but"  title="">Accueil</a></td>
-                <td><a href="index.html" class="but"  title="">Actualités</a></td>
-                <td><a href="blog.html" class="but" title="">Club</a></td>
-                <td><a href="blog.html" class="but" title="">Compétitions</a></td>
-                <td><a href="gallery.html"  class="but" title="">Animations</a></td>
-                <td><a href="about_us.html"  class="but" title="">Contact</a></td>
-                <td><a href="contact_us.html" class="but" title="">Administration</a></td>
-            </tr>
-        </table>        
+    <div class="nav">
+        <ul>
+            <?php
+            if (1===1) {
+                ?>
+                    <li class="dropdown active">
+                <?php
+            } else {
+                ?>
+                    <li class="dropdown">
+                <?php
+            }
+            ?>
+            <!-- <li class="dropdown active"> -->
+                <a href="javascript:void(0)" class="dropbtn">Accueil</a>
+            </li>
+            <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Actualités</a>
+            </li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">Club</a>
+                    <div class="dropdown-content">
+                            <a href="#">Présentation</a>
+                            <a href="#">Inscription / Tarifs</a>
+                            <a href="#">Horaires / Dates</a>
+                            <a href="#">Localisation</a>
+                    </div>
+            </li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">Compétitions</a>
+                    <div class="dropdown-content">
+                        <a href="#">Sénior</a>
+                        <a href="#">Jeunes</a>
+                        <a href="#">Coupe de l'anjou</a>
+                    </div>
+            </li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">Animations</a>
+                    <div class="dropdown-content">
+                        <a href="#">Repas de fin de saison 2018</a>
+                        <a href="#">Ping palet 2018</a>
+                        <a href="#">Loto 2018</a>
+                    </div>
+            </li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">Contact</a>
+            </li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">Administration</a>
+            </li>
+        </ul> 
     </div>
-    
     
     <!-- content -->
     
@@ -76,13 +112,13 @@
     	<div id="content_top">
         	<div id="content_bott">
             	<div id="left">
-                	<div class="left_title">Categories</div>
+                	<div class="left_title">Actualités</div>
                     <ul class="left_ul">
-                        <li><a href="#">Quisque condimentum laoreet </a></li>
-                        <li><a href="#">Vivamus auctor sem nec est </a></li>
-                        <li><a href="#">Fusce dictum suscipit velit</a></li>
-                        <li><a href="#">Phasellus vehicula sollicitudin</a></li>
-                        <li><a href="#">Donec commodo justo at eros </a></li>
+                        <li><a href="#">Repas de fin d'année 2018</a></li>
+                        <li><a href="#">Finale des tournois de secteur</a></li>
+                        <li><a href="#">Séniors : Journée 7 Phase 2</a></li>
+                        <li><a href="#">Jeunes : Journée 5 Phase 2</a></li>
+                        <li><a href="#">Coupe de l'anjou : Journée 5</a></li>
                     </ul>
                     <div class="left_title">Partners</div>
                     <ul class="left_ul2">
