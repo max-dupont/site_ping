@@ -72,7 +72,13 @@ body{
 	height: 263px;
 	float: left;
 	border-radius: 25px;
-	background: url(images/logo.png) center top no-repeat;
+	/* background: url(images/logo.png) center top no-repeat; */
+}
+
+.labels {
+	width: 90px;
+	height: 40px;
+	border-radius: 10px;
 }
 
 .image {
@@ -81,8 +87,8 @@ body{
 }
 
 .top{
-	background: url(images/top_bg.png);
-	padding: 14px 0px;
+	background-color: darkred;
+	padding: 14px 0px 5px 0px;
 	right: 0;
 
 }
@@ -94,7 +100,7 @@ body{
 	margin: 0 20%;
 	right: 0;
 	float: right;
-	background: url(images/loto.jpg) center top no-repeat;
+	/* background: url(images/loto.jpg) center top no-repeat; */
 }
 
 
@@ -302,26 +308,31 @@ li.dropdown {
 
 #content_bott{
 	/* background: url(images/content_bg_line.gif)  right bottom no-repeat; */
+	/* height: auto; */
 }
 
 #left{
 	float:left;
 	width: 276px;
 	/* padding-top: 15px; */
+    background-color: red;
+	height: inherit;
 }
 	
 .left_title{
 	background-color: #333 ;
-	width: 276px;
-	height: 45px;
-	padding: 15px 0 0 0;
+	/* width: 276px; */
+	/* height: 45px; */
+	padding: 10px 0;
 	text-align: center;
 	font-family: Book Antiqua, Arial, Helvetica, sans-serif;
 	font-size: 24px;
+	border-radius: 10px;
+	margin: 5% 5% 0% 5%;
 }
 
 .left_ul{
-	padding: 20px;
+	padding: 5% 5% 10% 5%;
 	list-style: none;
     background-color: red;
 }
@@ -366,10 +377,16 @@ li.dropdown {
 	float: right;
 	width: 676px;
 	margin: 23px 20px 18px 0;
+	height: inherit;
 }
 
 #right_row1{
 	height: 150px;
+}
+
+#right_row1 img{
+	width: 120px;
+	height: 90px;
 }
 
 .right_box{
@@ -389,13 +406,13 @@ h4{
 	padding: 0 0 10px 0;
 	text-align: center;
 	font-family: Book Antiqua, Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 
 .read_more{
 	text-align: right;
-	padding: 8px 0px 0px 0px;
+	/* padding: 8px 0px 0px 0px; */
 	height: 18px;
 }
 
@@ -404,13 +421,14 @@ h4{
 	float:right;
 	width: 75px;
 	height: 21px;
-	padding-top: 2px;
-	background: url(images/read_more.gif) left top no-repeat;
+	padding-top: 3px;
+	background: #333;
 	font-size: 12px;
 	text-align: center;
 	color: #fff !important;
 	text-decoration: none !important;
-	
+	border-radius: 10px;
+	border: 1px solid white;
 }
 
 .read_more a:hover {
@@ -425,7 +443,7 @@ h4{
 }
 
 #right_row2{
-	background:url(images/right_row2.gif) 415px repeat-y;
+	/* background:url(images/right_row2.gif) 415px repeat-y; */
 }
 
 #right_row2_left{
@@ -462,6 +480,7 @@ h5{
 /*bottom*/
 #bottom{
 	background: url(images/div_line.gif) 0px 45px repeat-x;
+	background-color: #333;
 }
 
 h1{
@@ -587,7 +606,8 @@ background:url(images/bottom_fish4.png) top left no-repeat;
 	color: #fff;
 	text-align: center;
 	height: 60px;
-	padding: 25px 0px 0px 30px;
+	padding: 1.5% 0px 0px 30px;
+	background-color: black;
 }
 
 #footer a{
@@ -635,34 +655,36 @@ background:url(images/bottom_fish4.png) top left no-repeat;
 	height: 263px;
 }
 #slider a {
-	border:0;
+	/* border:0; */
 	display:block;
 }
 
 .nivo-controlNav {
 	position:absolute;
-	left: 17.5%;
-	bottom:-42px;
+	left: 20%;
+	bottom:-10%;
 }
 .nivo-controlNav a {
 	display:block;
-	width:22px;
-	height:22px;
-	background:url(images/bp.png) no-repeat;
+	width:15px;
+	height:15px;
+	background:#333;
 	text-indent:-9999px;
-	border:0;
+	border:1px solid white;
 	margin-right:3px;
 	float:left;
+	border-radius: 100px;
 }
 .nivo-controlNav a.active, .nivo-controlNav a:hover	 {
-	background:url(images/bp_hover.png) no-repeat;
+	background:white;
+	border: 1px solid #333;
 }
 
 .nivo-directionNav a {
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(images/arrows.png) no-repeat;
+	/* background:url(images/arrows.png) no-repeat; */
 	text-indent:-9999px;
 	border:0;
 }
@@ -683,6 +705,10 @@ a.nivo-prevNav {
     text-decoration:underline;
 }
 
-
+.margin-b-10 {
+	margin-bottom: 10%;
+	border-radius: 100px;
+	/* border-radius: 25px; */
+}
 
 
