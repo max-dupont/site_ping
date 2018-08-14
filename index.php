@@ -6,7 +6,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="styles.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="utils/slider/nivo-slider.css" type="text/css" media="screen" />
 </head>
 <body>
     <div id="main">
@@ -15,40 +15,40 @@
 		<!-- <div id="logo"> -->
             <!-- <a href="#"> -->
                 <!-- <span class="logo_span">La Seg TT</span><br /> -->
-                <!-- <img src="images/logo.png" class="header_img" alt="" /> -->
+                <!-- <img src="utils/images/logo.png" class="header_img" alt="" /> -->
                 <!-- Company Slogan Goes Here -->
             <!-- </a> -->
         <!-- </div> -->
         <!-- <div class="header_imgs"> -->
-        	<!-- <a href="#"><img src="images/logo.png" class="header_img" alt="" /></a> -->
-            <!-- <a href="#"><img src="images/img_l2.png" class="header_img" alt="" /></a>
-            <a href="#"><img src="images/img_l3.png" class="header_img" alt="" /></a>
-            <a href="#"><img src="images/img_l4.png" class="header_img" alt="" /></a>
-            <a href="#"><img src="images/img_l5.png" class="header_img" alt="" /></a> -->
+        	<!-- <a href="#"><img src="utils/images/logo.png" class="header_img" alt="" /></a> -->
+            <!-- <a href="#"><img src="utils/images/img_l2.png" class="header_img" alt="" /></a>
+            <a href="#"><img src="utils/images/img_l3.png" class="header_img" alt="" /></a>
+            <a href="#"><img src="utils/images/img_l4.png" class="header_img" alt="" /></a>
+            <a href="#"><img src="utils/images/img_l5.png" class="header_img" alt="" /></a> -->
         <!-- </div> -->
     <!-- </div> -->
     <!-- top -->
     <div class="top"  id="wrapper">
         <div class="logo" style="text-align:center">
-            <img class="margin-b-10" src="images/logo.png" alt="#" />
-            <img class="labels" src="images/actiping.jpg" alt="#" />
-            <img class="labels" src="images/equipping.jpg" alt="#" />
+            <img class="margin-b-10" src="utils/images/logo.png" alt="#" />
+            <img class="labels" src="utils/images/actiping.jpg" alt="#" />
+            <img class="labels" src="utils/images/equipping.jpg" alt="#" />
         </div>
         <div class="top_img">
             <div id="wrapper">
                 <div id="slider-wrapper">        
                     <div id="slider" class="nivoSlider">
-                        <!-- inclure logo sur les images -->
-                        <img src="images/loto.jpg" alt="#" />
-                        <img src="images/jeunes.jpg" alt="#"/>
-                        <img src="images/jeunes1.jpg" alt="#" />
-                        <img src="images/titres.jpg" alt="#" />
-                        <img src="images/tournoi_secteur.jpg" alt="#" />
+                        <!-- inclure logo sur les utils/images -->
+                        <img src="utils/images/loto.jpg" alt="#" />
+                        <img src="utils/images/jeunes.jpg" alt="#"/>
+                        <img src="utils/images/jeunes1.jpg" alt="#" />
+                        <img src="utils/images/titres.jpg" alt="#" />
+                        <img src="utils/images/tournoi_secteur.jpg" alt="#" />
                     </div>        
                 </div>
             </div>
-            <script type="text/javascript" src="lib/jquery-1.4.3.min.js"></script>
-            <script type="text/javascript" src="lib/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript" src="utils/slider/jquery-1.4.3.min.js"></script>
+            <script type="text/javascript" src="utils/slider/jquery.nivo.slider.pack.js"></script>
             <script type="text/javascript">
             $(window).load(function() {
                 $('#slider').nivoSlider();
@@ -160,9 +160,9 @@
                     <div style="border-top: 3px solid #333; border-style: dotted;"></div>
                     
                     <meta charset="UTF-8">
-                    <script src="test/moment-locale.js"></script>
-                    <script src="tests/index.js"></script>
-                    <link href="tests/index.css" rel="stylesheet" type="text/css" />
+                    <script src="utils/calendar/moment-locale.js"></script>
+                    <script src="utils/calendar/index.js"></script>
+                    <link href="utils/calendar/index.css" rel="stylesheet" type="text/css" />
                     <ul style="background-color: red;">
                         <div style="padding:10% 5% 10% 5%;  font-size:12px" >
                             <table style="padding:5%; border:1px solid white; border-radius:10px; background-color:#333; color:white">
@@ -189,7 +189,7 @@
                 	<div id="right_row1">
                         <!-- <div class="right_box"> -->
                             <h4>Repas de fin d'année 2018</h4>
-                          <img src="images/loto.jpg" class="right_box_img" alt="" /><br />
+                          <img src="utils/images/loto.jpg" class="right_box_img" alt="" /><br />
                             <span class="span_lh">Vivamus auctor sem nec est porttitor nec rutrum turpis facilisis.
                             Vivamus auctor sem nec est porttitor nec rutrum turpis facilisis.
                             Vivamus auctor sem nec est porttitor nec rutrum turpis facilisis.
@@ -202,14 +202,14 @@
                       <!-- <div style="width:19px; float:left; height:10px;"></div>
                         <div class="right_box">
                             <h4>Praesent eu purus</h4>
-                            <img src="images/right_box_img2.png" class="right_box_img" alt="" /><br />
+                            <img src="utils/images/right_box_img2.png" class="right_box_img" alt="" /><br />
                             <span class="span_lh">In hac habitasse platea dictumst. Fusce tempus erat non erat sodales</span>
                             <div class="read_more"><a href="#">Lire l'article</a></div>
                         </div>
                         <div style="width:19px; float:left; height:10px;"></div>
                         <div class="right_box" style="width: 227px;">
                             <h4>Sed sollicitudin leo</h4>
-                            <img src="images/right_box_img3.png" class="right_box_img" alt="" /><br />
+                            <img src="utils/images/right_box_img3.png" class="right_box_img" alt="" /><br />
                             <span class="span_lh">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per </span>
                             <div class="read_more"><a href="#">Lire l'article</a></div>
                         </div> -->
@@ -218,7 +218,7 @@
                     <div id="right_row1" style="text-align:center">
                     	<!-- <div id="right_row2_left"> -->
                         	<h5>La SEG TT</h5>
-                            <!-- <img src="images/phot1.png" class="phot" alt="" /> -->
+                            <!-- <img src="utils/images/phot1.png" class="phot" alt="" /> -->
                             <span class="span_lh">
                                     Bienvenue sur le site de la Seg TT, le club de tennis de table de la Séguinière.
                                     <br>Adhérents, supporters, partenaires, ce site est le votre.
@@ -230,11 +230,11 @@
                                     <br>(voir calendrier à gauche)
                                     <br>
                                     <a href="https://www.facebook.com/La-Seg-TT-124926477608075/" style="color:white; font-weight:bold;" >
-                                        <img src="images/bottom_fish2.png" style="zoom:15%">
+                                        <img src="utils/images/bottom_fish2.png" style="zoom:15%">
                                         Facebook
                                     </a>
                             </span>
-                            <embed src="./images/planning.pdf" style="float:left; margin:2% auto" width="100%" height="350px" type='application/pdf'/>
+                            <embed src="./utils/images/planning.pdf" style="float:left; margin:2% auto" width="100%" height="350px" type='application/pdf'/>
                         <!-- </div> -->
                         <!-- <div id="right_row2_right">
                         	<h5>Company News</h5>
@@ -264,7 +264,7 @@
     <!-- <div id="bottom">
         <div class="bottom_box bottom_box1">
         	<h1>About Us</h1>
-            <img src="images/phot2.png" alt="" />
+            <img src="utils/images/phot2.png" alt="" />
             <div style=" height: 5px; width: 100%"></div>
             <span class="span_lh">Proin adipiscing fringilla nibh id hendrerit. Duis accumsan, arcu ac porta sus</span>
         </div>
