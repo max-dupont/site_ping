@@ -281,10 +281,38 @@ li.dropdown {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+	/* text-align: center; */
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content ul a {
+	background-color: #333;
+	color: white;
+	padding: 12px 16px;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+.dropdown-content ul li a {
+	background-color: #f9f9f9;
+	color: black;
+	padding: 12px 16px;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+.dropdown-content a:hover {
+	background-color: #333;
+	color: white;
+	padding: 12px 16px;
+	border: 1px solid white;
+}
+
+.dropdown-content ul li a:hover {
+	background-color: darkred;
+	color: white;
+	padding: 12px 16px;
+	border: 1px solid white;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;

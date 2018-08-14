@@ -87,10 +87,26 @@
             </li>
             <li class="dropdown">
                     <a href="#" class="dropbtn">Compétitions</a>
-                    <div class="dropdown-content">
-                        <a href="#">Séniors</a>
-                        <a href="#">Jeunes</a>
-                        <a href="#">Coupe de l'anjou</a>
+                    <div class="dropdown-content" style="width:202px" >
+                        <!-- <a>Séniors -->
+                            <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
+                                <a style="width: 100%;">Séniors</a>
+                                <li><a href="#" style="float:left; padding: 5px">D2-A</a></li>
+                                <li><a href="#" style="float:left; padding: 5px">D3-A</a></li>
+                                <li><a href="#" style="float:left; padding: 5px">D3-B</a></li>
+                                <li><a href="#" style="float:left; padding: 5px">D3-C</a></li>
+                                <li><a href="#" style="float:left; padding: 5px">D4-A</a></li>
+                            </ul>
+                        <!-- </a> -->
+                            <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
+                                <a style="width: 100%;">Jeunes</a>
+                                <li><a href="#" style="padding: 5px">ÉQUIPE 1 / D3-A</a></li>
+                            </ul>
+                            <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
+                                <a style="width: 100%;">Coupe de l'anjou</a>
+                                <li><a href="#" style="padding: 5px">ÉQUIPE 1 / C3-A</a></li>
+                                <li><a href="#" style="padding: 5px">ÉQUIPE 2 / C3-B</a></li>
+                            </ul>
                     </div>
             </li>
             <li class="dropdown">
@@ -100,6 +116,9 @@
                         <a href="#">Ping palet 2018</a>
                         <a href="#">Loto 2018</a>
                     </div>
+            </li>
+            <li class="dropdown">
+                    <a href="#" class="dropbtn">Partenaires</a>
             </li>
             <li class="dropdown">
                     <a href="#" class="dropbtn">Contact</a>
