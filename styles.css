@@ -14,6 +14,7 @@ img{
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
+	/* border-radius: 25px; */
 }
 
 body{
@@ -23,7 +24,7 @@ body{
 }
 
 #main {
-	width: 1000px;
+	width: 1200px;
 	margin: 0px auto;
 	background-color: red;
 }
@@ -95,12 +96,12 @@ body{
 
 
 .top_img {
-	width: 35%;
-	height: 263px;
-	margin: 0 20%;
-	right: 0;
-	float: right;
-	/* background: url(utils/images/loto.jpg) center top no-repeat; */
+	margin-top: 1%;
+    width: 75%;
+    height: 263px;
+    padding: 0px 10%;
+    right: 0;
+    float: right;
 }
 
 
@@ -220,9 +221,15 @@ body{
     padding: 0;
 }
 
-tr, table {
-	width: 100%;
-}
+/* embed >>>#document >>> html >>> body >>> table { */
+	/* width: 880px; */
+	/* width:100%;  */
+	/* width:700px; */
+	/* _padding-right:100%; */
+	/* min-width : 700px; */
+	 /* height:15px; */
+	/* border-spacing: 0px; */
+/* } */
 
 ul {
     list-style-type: none;
@@ -324,6 +331,13 @@ li.dropdown {
 	border-radius: 25px;
     /* color: white; */
 }
+
+embed, embed table {
+	width: 880px;
+	height: 800px;
+	/* zoom: 3; */
+}
+
 /*content*/
 #content{
 	padding: 0px 0 0 0;
@@ -403,17 +417,18 @@ li.dropdown {
 
 #right{
 	float: right;
-	width: 676px;
+	width: 880px;
 	margin: 23px 20px 18px 0;
 	height: inherit;
 }
 
-#right_row1{
+.right_row1{
 	height: 150px;
+	/* width: 100%; */
 }
 
-#right_row1 img{
-	width: 120px;
+.right_row1 img{
+	/* width: 120px; */
 	height: 90px;
 }
 
@@ -444,7 +459,7 @@ h4{
 	height: 18px;
 }
 
-.read_more a {
+.read_more button {
 	display: block;
 	float:right;
 	width: 75px;
@@ -459,10 +474,11 @@ h4{
 	border: 1px solid white;
 }
 
-.read_more a:hover {
+.read_more button:hover {
 	font-size:12px;
 	color:#fff;
 	text-decoration: underline !important;
+	cursor: pointer;
 }
 
 .div_line{
@@ -737,6 +753,7 @@ a.nivo-prevNav {
 	margin-bottom: 10%;
 	border-radius: 100px;
 	/* border-radius: 25px; */
+	width: 80%;
 }
 
 

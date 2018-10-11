@@ -1252,7 +1252,7 @@
     // LOCALES
 
     function localeWeek (mom) {
-        return weekOfYear(mom, this._week.dow, this._week.doy).week;
+        return weekOfYear(mom, 1, this._week.doy).week;
     }
 
     var defaultLocaleWeek = {
@@ -1261,7 +1261,7 @@
     };
 
     function localeFirstDayOfWeek () {
-        return this._week.dow;
+        return 1;
     }
 
     function localeFirstDayOfYear () {
@@ -1510,7 +1510,7 @@
         if (!this.isValid()) {
             return input != null ? this : NaN;
         }
-        var weekday = (this.day() + 7 - this.localeData()._week.dow) % 7;
+        var weekday = (this.day() + 7 - 1) % 7;
         return input == null ? weekday : this.add(input - weekday, 'd');
     }
 
@@ -2116,7 +2116,7 @@
                 weekdayOverflow = true;
             }
         } else {
-            dow = config._locale._week.dow;
+            dow = 1;
             doy = config._locale._week.doy;
 
             var curWeek = weekOfYear(createLocal(), dow, doy);
@@ -3583,7 +3583,7 @@
                 input,
                 this.week(),
                 this.weekday(),
-                this.localeData()._week.dow,
+                1,
                 this.localeData()._week.doy);
     }
 
@@ -3598,7 +3598,7 @@
 
     function getWeeksInYear () {
         var weekInfo = this.localeData()._week;
-        return weeksInYear(this.year(), weekInfo.dow, weekInfo.doy);
+        return weeksInYear(this.year(), 1, weekInfo.doy);
     }
 
     function getSetWeekYearHelper(input, week, weekday, dow, doy) {
@@ -4007,7 +4007,7 @@
         }
 
         var locale = getLocale(),
-            shift = localeSorted ? locale._week.dow : 0;
+            shift = localeSorted ? 1 : 0;
 
         if (index != null) {
             return get$1(format, (index + shift) % 7, field, 'day');
@@ -8214,7 +8214,7 @@
             }
         },
         week: {
-            dow: 0, // Sunday is the first day of the week.
+            dow: 1, // Sunday is the first day of the week.
             doy: 6 // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -9495,7 +9495,7 @@
             return number + 'ನೇ';
         },
         week : {
-            dow : 0, // Sunday is the first day of the week.
+            dow : 1, // Sunday is the first day of the week.
             doy : 6  // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -10551,7 +10551,7 @@
             }
         },
         week : {
-            dow : 0, // Sunday is the first day of the week.
+            dow : 1, // Sunday is the first day of the week.
             doy : 6  // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -10981,7 +10981,7 @@
             yy : '%d बर्ष'
         },
         week : {
-            dow : 0, // Sunday is the first day of the week.
+            dow : 1, // Sunday is the first day of the week.
             doy : 6  // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -11291,7 +11291,7 @@
             }
         },
         week : {
-            dow : 0, // Sunday is the first day of the week.
+            dow : 1, // Sunday is the first day of the week.
             doy : 6  // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -12789,7 +12789,7 @@
             }
         },
         week : {
-            dow : 0, // Sunday is the first day of the week.
+            dow : 1, // Sunday is the first day of the week.
             doy : 6  // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -12866,7 +12866,7 @@
             }
         },
         week : {
-            dow : 0, // Sunday is the first day of the week.
+            dow : 1, // Sunday is the first day of the week.
             doy : 6  // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -13447,7 +13447,7 @@
             yy : '%d isgasn'
         },
         week : {
-            dow : 6, // Saturday is the first day of the week.
+            dow : 1, // Saturday is the first day of the week.
             doy : 12  // The week that contains Jan 1st is the first week of the year.
         }
     });
@@ -13493,7 +13493,7 @@
             yy : '%d ⵉⵙⴳⴰⵙⵏ'
         },
         week : {
-            dow : 6, // Saturday is the first day of the week.
+            dow : 1, // Saturday is the first day of the week.
             doy : 12  // The week that contains Jan 1st is the first week of the year.
         }
     });

@@ -35,10 +35,10 @@
             <img class="labels" src="utils/images/equipping.jpg" alt="#" />
         </div>
         <div class="top_img">
-            <div id="wrapper">
+            <!-- <div id="wrapper">
                 <div id="slider-wrapper">        
                     <div id="slider" class="nivoSlider">
-                        <!-- inclure logo sur les utils/images -->
+                        inclure logo sur les utils/images
                         <img src="utils/images/loto.jpg" alt="#" />
                         <img src="utils/images/jeunes.jpg" alt="#"/>
                         <img src="utils/images/jeunes1.jpg" alt="#" />
@@ -46,14 +46,36 @@
                         <img src="utils/images/tournoi_secteur.jpg" alt="#" />
                     </div>        
                 </div>
-            </div>
-            <script type="text/javascript" src="utils/slider/jquery-1.4.3.min.js"></script>
+            </div> -->
+            <!-- <script type="text/javascript" src="utils/slider/jquery-1.4.3.min.js"></script>
             <script type="text/javascript" src="utils/slider/jquery.nivo.slider.pack.js"></script>
-            <script type="text/javascript">
-            $(window).load(function() {
+            <script type="text/javascript"> -->
+            <!-- $(window).load(function() {
                 $('#slider').nivoSlider();
-            });
+            }); -->
+            <!-- </script> -->
+            <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+            <script src="utils/slider2.0/js/jquery.film_roll.js"></script>
+            <script>
+                (function() {
+                jQuery(function() {
+                this.film_rolls || (this.film_rolls = []);
+                this.film_rolls['demo'] = new FilmRoll({
+                container: '#demo',
+                // height: 275,
+                width: 500
+                });
+                return true;
+                });
+                }).call(this);
             </script>
+            <div id='demo' style="height: 100%" >
+                <div><a href='#'><img src="utils/images/loto.jpg" alt="#" /></a></div>
+                <div><a href='#'><img src="utils/images/jeunes.jpg" alt="#"/></a></div>
+                <div><a href='#'><img src="utils/images/jeunes1.jpg" alt="#" /></a></div>
+                <div><a href='#'><img src="utils/images/titres.jpg" alt="#" /></a></div>
+                <div><a href='#'><img src="utils/images/tournoi_secteur.jpg" alt="#" /></a></div>
+            </div>
         </div>
         <div style="clear: both; padding-top: 40px;"></div>
     </div>
@@ -103,10 +125,10 @@
             ?>
                 <a href="javascript:void(0)" class="dropbtn">Club</a>
                 <div class="dropdown-content">
-                        <a href="index.php?uc=club">Présentation</a>
-                        <a href="index.php?uc=club">Inscription / Tarifs</a>
-                        <a href="index.php?uc=club">Horaires / Dates</a>
-                        <a href="index.php?uc=club">Localisation</a>
+                        <a href="index.php?uc=club&action=presentation">Présentation</a>
+                        <a href="index.php?uc=club&action=tarifs">Inscription</a>
+                        <a href="index.php?uc=club&action=horaires">Dates</a>
+                        <a href="index.php?uc=club&action=localisation">Localisation</a>
                 </div>
             </li>
             <?php
@@ -125,21 +147,21 @@
                     <!-- <a>Séniors -->
                         <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
                             <a style="width: 100%;">Séniors</a>
-                            <li><a href="index.php?uc=competitions" style="float:left; padding: 5px">D2-A</a></li>
-                            <li><a href="index.php?uc=competitions" style="float:left; padding: 5px">D3-A</a></li>
-                            <li><a href="index.php?uc=competitions" style="float:left; padding: 5px">D3-B</a></li>
-                            <li><a href="index.php?uc=competitions" style="float:left; padding: 5px">D3-C</a></li>
-                            <li><a href="index.php?uc=competitions" style="float:left; padding: 5px">D4-A</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe1" style="float:left; padding: 5px">D2-A</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe2" style="float:left; padding: 5px">D3-A</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe3" style="float:left; padding: 5px">D3-B</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe4" style="float:left; padding: 5px">D3-C</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe5" style="float:left; padding: 5px">D4-A</a></li>
                         </ul>
                     <!-- </a> -->
                         <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
                             <a style="width: 100%;">Jeunes</a>
-                            <li><a href="index.php?uc=competitions" style="padding: 5px">ÉQUIPE 1 / D3-A</a></li>
+                            <li><a href="index.php?uc=competitions&action=jeunes-equipe1" style="padding: 5px">ÉQUIPE 1 / D3-A</a></li>
                         </ul>
                         <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
                             <a style="width: 100%;">Coupe de l'anjou</a>
-                            <li><a href="index.php?uc=competitions" style="padding: 5px">ÉQUIPE 1 / C3-A</a></li>
-                            <li><a href="index.php?uc=competitions" style="padding: 5px">ÉQUIPE 2 / C3-B</a></li>
+                            <li><a href="index.php?uc=competitions&action=coupe-equipe1" style="padding: 5px">ÉQUIPE 1 / C3-A</a></li>
+                            <li><a href="index.php?uc=competitions&action=coupe-equipe2" style="padding: 5px">ÉQUIPE 2 / C3-B</a></li>
                         </ul>
                 </div>
             </li>
@@ -154,12 +176,7 @@
                 <?php
             }
             ?>
-                <a href="javascript:void(0)" class="dropbtn">Animations</a> <!-- max 6/7 -->
-                <div class="dropdown-content">
-                    <a href="index.php?uc=animations">AG 2018</a>
-                    <a href="index.php?uc=animations">Repas de fin de saison 2018</a>
-                    <a href="index.php?uc=animations">Ping palet 2018</a>
-                </div>
+                <a href="index.php?uc=animations" class="dropbtn">Animations</a>
             </li>
             <?php
             if ($_SESSION['uc']==='partenaires') {
@@ -238,8 +255,8 @@
                     <script src="utils/calendar/index.js"></script>
                     <link href="utils/calendar/index.css" rel="stylesheet" type="text/css" />
                     <ul style="background-color: red;">
-                        <div style="padding:10% 5% 10% 5%;  font-size:12px" >
-                            <table style="padding:5%; border:1px solid white; border-radius:10px; background-color:#333; color:white">
+                        <div style="padding:10% 5% 10% 5%; font-size:12px" >
+                            <table style="width: 100%; padding:5%; border:1px solid white; border-radius:10px; background-color:#333; color:white">
                                 <tr>
                                     <td style="text-align:left;">En ligne :</td>
                                     <td style="text-align:right;">0007</td>

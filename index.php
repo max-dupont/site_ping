@@ -24,13 +24,13 @@ switch($_SESSION['uc'])
 		
 	case 'club':
 		{
-            include("views/club.php");
+            include("controllers/club.php");
             break;
         }
 		
 	case 'competitions':
 		{
-            include("views/competitions.php");
+            include("controllers/competitions.php");
             break;
         }
 

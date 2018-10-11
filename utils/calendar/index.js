@@ -117,7 +117,9 @@
   }
 
   Calendar.prototype.getWeek = function(day) {
+    // console.log(this.week, day);
     if(!this.week || day.day() === 0) {
+      // if((!this.week && day.day() === 0) || day.day() === 1) {
       this.week = createElement('div', 'week');
       this.month.appendChild(this.week);
     }
@@ -125,8 +127,9 @@
 
   Calendar.prototype.drawDay = function(day) {
     var self = this;
+    // console.log(day);
     this.getWeek(day);
-
+// console.log(day);
     //Outer Day
     var outer = createElement('div', this.getDayClass(day));
     outer.addEventListener('click', function() {

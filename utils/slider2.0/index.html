@@ -1,0 +1,22 @@
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.film_roll.js"></script>
+<script>
+    (function() {
+    jQuery(function() {
+    this.film_rolls || (this.film_rolls = []);
+    this.film_rolls['demo'] = new FilmRoll({
+    container: '#demo',
+    height: 275,
+    width: 500
+    });
+    return true;
+    });
+    }).call(this);
+</script>
+<div id='demo' style="width: 500px; height: 250px" >
+    <div><a href='#'><img src="../../utils/images/loto.jpg" alt="#" /></a></div>
+    <div><a href='#'><img src="../../utils/images/jeunes.jpg" alt="#"/></a></div>
+    <div><a href='#'><img src="../../utils/images/jeunes1.jpg" alt="#" /></a></div>
+    <div><a href='#'><img src="../../utils/images/titres.jpg" alt="#" /></a></div>
+    <div><a href='#'><img src="../../utils/images/tournoi_secteur.jpg" alt="#" /></a></div>
+</div>
