@@ -1,5 +1,5 @@
 <div id="right">
-    <div id="right_row1">
+    <div class="right_row1">
         <!-- <div class="right_box"> -->
             <h4>Repas de fin d'année 2018</h4>
             <img src="utils/images/loto.jpg" class="right_box_img" alt="" /><br />
@@ -10,7 +10,7 @@
             Vivamus auctor sem nec est porttitor nec rutrum turpis facilisis.
             Vivamus auctor sem nec est porttitor nec rutrum turpis facilisis.
             Fusce </span>
-            <div class="read_more"><a href="#">Lire l'article</a></div>
+            <div class="read_more"><a href="index.php?uc=actus">Lire l'article</a></div>
         <!-- </div> -->
         <!-- <div style="width:19px; float:left; height:10px;"></div>
         <div class="right_box">
@@ -28,7 +28,7 @@
         </div> -->
     </div>
     <div class="div_line" style=" height: 20px;"></div>
-    <div id="right_row1" style="text-align:center">
+    <div class="right_row1" style="text-align:center">
         <!-- <div id="right_row2_left"> -->
             <h5>La SEG TT</h5>
             <!-- <img src="utils/images/phot1.png" class="phot" alt="" /> -->
@@ -47,7 +47,7 @@
                         Facebook
                     </a>
             </span>
-            <embed src="./utils/images/planning.pdf" style="float:left; margin:2% auto" width="100%" height="350px" type='application/pdf'/>
+            <embed id="planning" src="./utils/images/planning.pdf" style="float:left; margin:2% auto auto auto " width="100%" height="350px" type='application/pdf'/>
         <!-- </div> -->
         <!-- <div id="right_row2_right">
             <h5>Company News</h5>

@@ -1,9 +1,12 @@
 <div id="right">
-    <div id="right_row1">
+    <div class="right_row1">
         <h5 style="text-align:center">Présentation</h5>
-        Le club de La Seg TT est composé de 5 équipes séniors
-        évoluant au niveau départemental (D2, D3, D4) ainsi que d’une équipe de jeunes évoluant actuellement en D3.
-        <br>Il possède une quarantaine de licenciés avec notamment une dizaine de jeunes.
+        <div style="text-align:center">
+            Le club de La Seg TT est composé de 5 équipes séniors
+            évoluant au niveau départemental (D2, D3, D4) ainsi que d’une équipe de jeunes évoluant en D2.
+            <br>Il possède une quarantaine de licenciés avec notamment une dizaine de jeunes.
+        </div>
+        
         <!-- <br>trombinoscope ? présentation du bureau ? -->
         <table style="margin: 5% 0% 0% 0%; padding: 3%; border: 1px solid white;
         border-radius: 10px; background-color: #333; color: white; width:100%;">

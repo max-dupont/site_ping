@@ -1,5 +1,5 @@
 <div id="right">
-    <div id="right_row1"style="text-align:justify">
+    <div class="right_row1"style="text-align:justify">
         <h5 style="text-align:center">Inscription</h5>
         <b>Vous pensez vous inscrire ? N’hésitez plus !</b>
         <p>

@@ -140,20 +140,22 @@
     var name = createElement('div', 'day-name', day.format('ddd'));
 
     //Day Number
-    var number = createElement('div', 'day-number', day.format('DD'));
+    var number = createElement('div', 'day-number hidden', day.format('DD'));
 
 
     //Events
-    var events = createElement('div', 'day-events');
-    this.drawEvents(day, events);
+    // var events = createElement('div', 'day-events', day.format('DD'));
 
     outer.appendChild(name);
     outer.appendChild(number);
-    outer.appendChild(events);
+    // outer.appendChild(events);
+    this.drawEvents(day, outer);
+
     this.week.appendChild(outer);
   }
 
-  Calendar.prototype.drawEvents = function(day, element) {
+  Calendar.prototype.drawEvents = function(day, outer) {
+    var evSpan = null;
     if(day.month() === this.current.month()) {
       var todaysEvents = this.events.reduce(function(memo, ev) {
         if(ev.date.isSame(day, 'day')) {
@@ -163,10 +165,19 @@
       }, []);
 
       todaysEvents.forEach(function(ev) {
-        var evSpan = createElement('span', ev.color);
-        element.appendChild(evSpan);
+        evSpan = createElement('div', 'day-events' + ' ' + ev.color, day.format('DD'));
       });
+
+      if (evSpan) {
+        outer.appendChild(evSpan);
+      } else {
+        evSpan = createElement('div', 'day-events', day.format('DD'));
+        outer.appendChild(evSpan);
+      }
+      
+
     }
+    // return evSpan;
   }
 
   Calendar.prototype.getDayClass = function(day) {
@@ -324,18 +335,18 @@
 
 !function() {
   var data = [
-    { eventName: 'Lunch Meeting w/ Mark', calendar: 'Animations', color: 'green', date: '2018-08-07' },
-    { eventName: 'Interview - Jr. Web Developer', calendar: 'Animations', color: 'green', date: '2018-08-07' },
+    { eventName: 'LOTO', calendar: 'Animations', color: 'green', date: '2018-11-01' },
+    { eventName: 'AG', calendar: 'Animations', color: 'green', date: '2018-06-22' },
     // { eventName: 'Demo New App to the Board', calendar: 'Animations', color: 'orange', date: '2018-08-07' },
     // { eventName: 'Dinner w/ Marketing', calendar: 'Animations', color: 'orange', date: '2018-08-07' },
 
-    { eventName: 'Game vs Portalnd', calendar: 'Jeunes', color: 'yellow', date: '2018-07-08' },
-    { eventName: 'Game vs Houston', calendar: 'Jeunes', color: 'yellow', date: '2018-07-08' },
+    { eventName: 'Journée 1', calendar: 'Jeunes', color: 'yellow', date: '2018-10-06' },
+    { eventName: 'Journée 2', calendar: 'Jeunes', color: 'yellow', date: '2018-11-10' },
     // { eventName: 'Game vs Denver', calendar: 'Jeunes', color: 'blue', date: '2018-07-08' },
     // { eventName: 'Game vs San Degio', calendar: 'Jeunes', color: 'blue', date: '2018-07-08' },
 
-    { eventName: 'School Play', calendar: 'Seniors', color: 'blue', date: '2018-09-06' },
-    { eventName: 'Parent/Teacher Conference', calendar: 'Seniors', color: 'blue', date: '2018-09-06' },
+    { eventName: 'Journée 1', calendar: 'Seniors', color: 'blue', date: '2018-10-07' },
+    { eventName: 'Journée 2', calendar: 'Seniors', color: 'blue', date: '2018-11-11' },
     // { eventName: 'Pick up from Soccer Practice', calendar: 'Seniors', color: 'yellow', date: '2018-09-06' },
     // { eventName: 'Ice Cream Night', calendar: 'Seniors', color: 'yellow', date: '2018-09-06' },
 

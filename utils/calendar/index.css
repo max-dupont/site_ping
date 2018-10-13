@@ -69,6 +69,10 @@
       right: 20px;
     }
     
+    .hidden {
+      display: none;
+    }
+
     .month {
       /*overflow: hidden;*/
       opacity: 0;
@@ -127,8 +131,9 @@
       z-index: 100;
     }
     
-    .day.other {
-     color: rgba(255, 255, 255, .3);
+    .day.other .day-name {
+     color: #333;
+     /* display: none; */
     }
     
     .day.today {
@@ -143,7 +148,7 @@
       letter-spacing: .7px;
     }
     
-    .day-number {
+    .day-events {
       font-size: 24px;
       letter-spacing: 1.5px;
     }
@@ -153,8 +158,6 @@
       list-style: none;
       margin-top: 3px;
       text-align: center;
-      height: 12px;
-      line-height: 6px;
       overflow: hidden;
     }
     
@@ -169,10 +172,10 @@
       margin: 0 1px;
     }
     
-    .blue { background:deepskyblue; }
-    /* .orange { background: orangered; } */
-    .green { background: lawngreen; }
-    .yellow { background: yellow; }
+    .blue { color:deepskyblue; }
+    /* .orange { color: orangered; } */
+    .green { color: lawngreen; }
+    .yellow { color: yellow; }
     
     .details {
       position: relative;

@@ -1,5 +1,5 @@
 <!-- <div id="right">
-    <div id="right_row1">
+    <div class="right_row1">
         contact du bureau et des capitaines ?   
         <form action="#" method="post">
             <h5 style="text-align:center">Contact</h5>
@@ -28,7 +28,7 @@
     </div>
 </div> -->
 <div id="right">
-    <div id="right_row1">
+    <div class="right_row1">
         <script src="https://www.emailmeform.com/builder/forms/jsform/27dM5v6asN4" type="text/javascript"></script>
         <div style="margin-top:18px;text-align:center">
             <div id='emf_advertisement'>

@@ -1,1 +1,6 @@
-<embed src="http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=49&cx_poule=3289&D1=3053&virtuel=0" ></embed>
+<div id="right">
+    <div class="right_row1">
+    <h5 style="text-align:center">LA SEG TT 1</h5>
+        <embed src="http://www.fftt.com/sportif/chpt_equipe/chp_div.php?D1=16541&epreuve=3949" ></embed>
+    </div>
+</div>

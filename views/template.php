@@ -7,6 +7,8 @@
 <meta name="description" content="" />
 <link href="styles.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="utils/slider/nivo-slider.css" type="text/css" media="screen" />
+<script src="common.js"></script>
+
 </head>
 <body>
     <div id="main">
@@ -70,11 +72,11 @@
                 }).call(this);
             </script>
             <div id='demo' style="height: 100%" >
-                <div><a href='#'><img src="utils/images/loto.jpg" alt="#" /></a></div>
-                <div><a href='#'><img src="utils/images/jeunes.jpg" alt="#"/></a></div>
-                <div><a href='#'><img src="utils/images/jeunes1.jpg" alt="#" /></a></div>
-                <div><a href='#'><img src="utils/images/titres.jpg" alt="#" /></a></div>
-                <div><a href='#'><img src="utils/images/tournoi_secteur.jpg" alt="#" /></a></div>
+                <div><a href="index.php?uc=animations"><img src="utils/images/loto.jpg" alt="#" /></a></div>
+                <div><a href="index.php?uc=actus"><img src="utils/images/jeunes.jpg" alt="#"/></a></div>
+                <div><a href="index.php?uc=actus"><img src="utils/images/jeunes1.jpg" alt="#" /></a></div>
+                <div><a href="index.php?uc=actus"><img src="utils/images/titres.jpg" alt="#" /></a></div>
+                <div><a href="index.php?uc=actus"><img src="utils/images/tournoi_secteur.jpg" alt="#" /></a></div>
             </div>
         </div>
         <div style="clear: both; padding-top: 40px;"></div>
@@ -147,21 +149,21 @@
                     <!-- <a>Séniors -->
                         <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
                             <a style="width: 100%;">Séniors</a>
-                            <li><a href="index.php?uc=competitions&action=seniors-equipe1" style="float:left; padding: 5px">D2-A</a></li>
-                            <li><a href="index.php?uc=competitions&action=seniors-equipe2" style="float:left; padding: 5px">D3-A</a></li>
-                            <li><a href="index.php?uc=competitions&action=seniors-equipe3" style="float:left; padding: 5px">D3-B</a></li>
-                            <li><a href="index.php?uc=competitions&action=seniors-equipe4" style="float:left; padding: 5px">D3-C</a></li>
-                            <li><a href="index.php?uc=competitions&action=seniors-equipe5" style="float:left; padding: 5px">D4-A</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe1" style="float:left; padding: 5px">D2-F</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe2" style="float:left; padding: 5px">D3-H</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe3" style="float:left; padding: 5px">D3-I</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe4" style="float:left; padding: 5px">D3-J</a></li>
+                            <li><a href="index.php?uc=competitions&action=seniors-equipe5" style="float:left; padding: 5px">D4-H</a></li>
                         </ul>
                     <!-- </a> -->
                         <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
                             <a style="width: 100%;">Jeunes</a>
-                            <li><a href="index.php?uc=competitions&action=jeunes-equipe1" style="padding: 5px">ÉQUIPE 1 / D3-A</a></li>
+                            <li><a href="index.php?uc=competitions&action=jeunes-equipe1" style="padding: 5px">ÉQUIPE 1 / D2-A</a></li>
                         </ul>
                         <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
                             <a style="width: 100%;">Coupe de l'anjou</a>
-                            <li><a href="index.php?uc=competitions&action=coupe-equipe1" style="padding: 5px">ÉQUIPE 1 / C3-A</a></li>
-                            <li><a href="index.php?uc=competitions&action=coupe-equipe2" style="padding: 5px">ÉQUIPE 2 / C3-B</a></li>
+                            <!-- <li><a href="#" style="padding: 5px">ÉQUIPE 1 / C3-A</a></li> -->
+                            <!-- <li><a href="#" style="padding: 5px">ÉQUIPE 2 / C3-B</a></li> -->
                         </ul>
                 </div>
             </li>
@@ -216,6 +218,7 @@
             }
             ?>
                     <a href="index.php?uc=administration" class="dropbtn">Administration</a>
+                    <!-- <a href="#" class="dropbtn">Administration</a> -->
             </li>
         </ul> 
     </div>
@@ -228,11 +231,11 @@
             	<div id="left">
                 	<div class="left_title" style=" border:1px solid white">Actualités</div>
                     <ul class="left_ul">
-                        <li><a href="#">Repas de fin d'année 2018</a></li>
-                        <li><a href="#">Finale des tournois de secteur</a></li>
-                        <li><a href="#">Séniors : Journée 7 Phase 2</a></li>
-                        <li><a href="#">Jeunes : Journée 5 Phase 2</a></li>
-                        <li><a href="#">Coupe de l'anjou : Journée 5</a></li>
+                        <li><a href="index.php?uc=animations">Repas de fin d'année 2018</a></li>
+                        <li><a href="index.php?uc=actus">Finale des tournois de secteur</a></li>
+                        <li><a href="index.php?uc=actus">Séniors : Journée 7 Phase 2</a></li>
+                        <li><a href="index.php?uc=actus">Jeunes : Journée 5 Phase 2</a></li>
+                        <li><a href="index.php?uc=animations">LOTO</a></li>
                     </ul>
                     <!-- <div class="left_title">Partners</div>
                     <ul class="left_ul2">
@@ -254,9 +257,9 @@
                     <script src="utils/calendar/moment-locale.js"></script>
                     <script src="utils/calendar/index.js"></script>
                     <link href="utils/calendar/index.css" rel="stylesheet" type="text/css" />
-                    <ul style="background-color: red;">
-                        <div style="padding:10% 5% 10% 5%; font-size:12px" >
-                            <table style="width: 100%; padding:5%; border:1px solid white; border-radius:10px; background-color:#333; color:white">
+                    <ul style="background-color: rgb(255, 18, 18);">
+                        <div style="padding:10% 5% 10% 5%; font-size:12px;text-align:center" >
+                            <!-- <table style="width: 100%; padding:5%; border:1px solid white; border-radius:10px; background-color:#333; color:white">
                                 <tr>
                                     <td style="text-align:left;">En ligne :</td>
                                     <td style="text-align:right;">0007</td>
@@ -269,7 +272,8 @@
                                     <td style="text-align:left;">Visites totales :</td>
                                     <td style="text-align:right;">0030</td>
                                 </tr>
-                            </table>
+                            </table> -->
+                            <img src="http://services.supportduweb.com/cpt_global/120228-8.png"/>
                         </div>
                     </ul>
                     <ul>

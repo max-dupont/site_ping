@@ -1,5 +1,5 @@
 <div id="right">
-    <div id="right_row1">
+    <div class="right_row1">
         <h5 style="text-align:center">Localisation</h5>
         <p style="text-align:center">
             LA SEG T.T.
