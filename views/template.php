@@ -37,26 +37,7 @@
             <img class="labels" src="utils/images/equipping.jpg" alt="#" />
         </div>
         <div class="top_img">
-            <!-- <div id="wrapper">
-                <div id="slider-wrapper">        
-                    <div id="slider" class="nivoSlider">
-                        inclure logo sur les utils/images
-                        <img src="utils/images/loto.jpg" alt="#" />
-                        <img src="utils/images/jeunes.jpg" alt="#"/>
-                        <img src="utils/images/jeunes1.jpg" alt="#" />
-                        <img src="utils/images/titres.jpg" alt="#" />
-                        <img src="utils/images/tournoi_secteur.jpg" alt="#" />
-                    </div>        
-                </div>
-            </div> -->
-            <!-- <script type="text/javascript" src="utils/slider/jquery-1.4.3.min.js"></script>
-            <script type="text/javascript" src="utils/slider/jquery.nivo.slider.pack.js"></script>
-            <script type="text/javascript"> -->
-            <!-- $(window).load(function() {
-                $('#slider').nivoSlider();
-            }); -->
-            <!-- </script> -->
-            <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+            <script src="utils/jquery-latest.min.js"></script>
             <script src="utils/slider2.0/js/jquery.film_roll.js"></script>
             <script>
                 (function() {
@@ -125,7 +106,7 @@
                 <?php
             }
             ?>
-                <a href="javascript:void(0)" class="dropbtn">Club</a>
+                <a href="#" class="dropbtn">Club</a>
                 <div class="dropdown-content">
                         <a href="index.php?uc=club&action=presentation">Présentation</a>
                         <a href="index.php?uc=club&action=tarifs">Inscription</a>
@@ -144,7 +125,7 @@
                 <?php
             }
             ?>
-                <a href="javascript:void(0)" class="dropbtn">Compétitions</a>
+                <a href="#" class="dropbtn">Compétitions</a>
                 <div class="dropdown-content" style="width:202px" >
                     <!-- <a>Séniors -->
                         <ul style="background-color:#f9f9f9;color:black;border-radius: inherit;">
