@@ -198,8 +198,8 @@
                 <?php
             }
             ?>
-                    <a href="index.php?uc=administration" class="dropbtn">Administration</a>
-                    <!-- <a href="#" class="dropbtn">Administration</a> -->
+                    <!-- <a href="index.php?uc=administration" class="dropbtn">Administration</a> -->
+                    <a href="#" class="dropbtn">Administration</a>
             </li>
         </ul> 
     </div>

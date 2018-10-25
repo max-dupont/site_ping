@@ -2,6 +2,8 @@
 
   var today = moment();
 
+console.log(today);
+
   function Calendar(selector, events) {
     this.el = document.querySelector(selector);
     this.events = events;
